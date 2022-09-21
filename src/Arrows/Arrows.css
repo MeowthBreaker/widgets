@@ -1,0 +1,47 @@
+.arrows {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows__arrow {
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.arrows__arrow:not(:last-child) {
+  margin-right: 10px;
+}
+
+.arrows__arrow:last-child {
+  margin-left: 10px;
+}
+
+.arrows__arrow::before {
+  content: "";
+
+  background: url('./left-arrow.svg') no-repeat center;
+  background-size: 15px 15px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.arrows__arrow_side_right::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scaleX(-1);
+}

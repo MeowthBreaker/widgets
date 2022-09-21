@@ -1,0 +1,21 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar__day {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.calendar__day-title_weekend {
+  color: red;
+}
+
+.calendar__buttons {
+  display: flex;
+  flex-direction: row;
+}

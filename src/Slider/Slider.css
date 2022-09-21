@@ -1,0 +1,75 @@
+.slider {
+  height: 300px;
+  width: 100%;
+
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__wrapper {
+  height: 90%;
+
+  display: flex;
+  flex-direction: row;
+
+  transition: all linear 0.2s;
+}
+
+.slider__slide {
+  min-width: 100vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slider__card {
+  width: 30vw;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.slider__image {
+  object-fit: cover;
+  overflow: hidden;
+
+  height: 100%;
+}
+
+.slider__buttons {
+  display: flex;
+  flex-direction: row;
+
+  width: 100vw;
+  height: 10%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider__button {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background-color: rgb(18, 93, 233);
+
+  transition: all linear 0.2s;
+}
+
+.slider__button_active {
+  background-color: rgb(44, 197, 80);
+}
